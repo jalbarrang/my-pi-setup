@@ -1,0 +1,34 @@
+# Dependencies and generated files
+node_modules/
+**/node_modules/
+extensions/claude-bridge/package-lock.json
+*.log
+*.tmp
+.DS_Store
+
+# Machine-only setup
+config/settings.local.json
+extensions/context7/config.json
+
+# Credentials and private state
+.env
+.env.*
+!.env.example
+**/auth.json
+**/trust.json
+**/credentials.json
+**/client.json
+*.pem
+*.key
+
+# Pi runtime state (in case this repo is ever cloned into the config directory)
+sessions/
+workflows/
+npm/
+git/
+intercom/
+backups/
+models-store.json
+mcp-cache.json
+mcp-onboarding.json
+settings.json

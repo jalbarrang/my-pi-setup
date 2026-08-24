@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "../../fun/drekki/pi-workflows",
+    "../../fun/drekki/pi-linear"
+  ]
+}

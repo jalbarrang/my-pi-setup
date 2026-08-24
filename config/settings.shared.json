@@ -1,0 +1,35 @@
+{
+  "transport": "websocket-cached",
+  "enableSkillCommands": true,
+  "showHardwareCursor": false,
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-sol",
+  "hideThinkingBlock": false,
+  "defaultThinkingLevel": "high",
+  "compaction": {
+    "enabled": true
+  },
+  "packages": [
+    "npm:@dreki-gg/pi-handoff",
+    "npm:@dreki-gg/pi-browser-tools",
+    "npm:@dreki-gg/pi-subagent",
+    "npm:@dreki-gg/pi-questionnaire",
+    "npm:@dreki-gg/pi-doc-search",
+    {
+      "source": "npm:@dreki-gg/pi-firestore",
+      "extensions": [
+        "-extensions/firestore/index.ts"
+      ]
+    },
+    "npm:@aliou/pi-processes",
+    "npm:@dreki-gg/pi-past-chats",
+    "npm:pi-intercom"
+  ],
+  "enabledModels": [
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-5.6-luna"
+  ],
+  "theme": "dark",
+  "fullscreenScrollbar": "always",
+  "tuiMode": "fullscreen"
+}

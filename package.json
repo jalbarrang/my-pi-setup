@@ -1,0 +1,11 @@
+{
+  "name": "my-pi-setup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npm run check:shell && npm run check:powershell && npm run check:settings",
+    "check:shell": "bash -n scripts/bootstrap.sh",
+    "check:powershell": "node scripts/check-powershell.mjs",
+    "check:settings": "node --test scripts/merge-settings.test.mjs"
+  }
+}

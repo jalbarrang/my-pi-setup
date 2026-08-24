@@ -1,0 +1,7 @@
+{
+  "apiKey": "YOUR_CONTEXT7_API_KEY",
+  "cache": {
+    "resolveTtlHours": 168,
+    "docsTtlHours": 24
+  }
+}

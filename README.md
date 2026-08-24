@@ -5,7 +5,7 @@ Portable personal configuration for [Pi](https://pi.dev), designed to stay consi
 ## Included
 
 - Shared model, UI, compaction, and package preferences
-- Global agent and system-prompt instructions
+- Global agent instructions
 - `copy-all` and Claude bridge extensions
 - Bug-hunter prompt and `gh-stack` skill
 - Optional Context7 configuration

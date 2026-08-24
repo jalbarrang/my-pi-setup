@@ -176,9 +176,6 @@ function Install-ManagedPath {
 Install-ManagedPath `
     -Source (Join-Path $RootDir "config/AGENTS.md") `
     -Target (Join-Path $PiDir "AGENTS.md")
-Install-ManagedPath `
-    -Source (Join-Path $RootDir "config/APPEND_SYSTEM.md") `
-    -Target (Join-Path $PiDir "APPEND_SYSTEM.md")
 
 foreach ($resourceType in @("extensions", "skills", "prompts", "themes")) {
     $sourceDirectory = Join-Path $RootDir $resourceType

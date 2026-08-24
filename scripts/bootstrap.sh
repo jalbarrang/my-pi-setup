@@ -72,7 +72,6 @@ link_path() {
 }
 
 link_path "$ROOT_DIR/config/AGENTS.md" "$PI_DIR/AGENTS.md"
-link_path "$ROOT_DIR/config/APPEND_SYSTEM.md" "$PI_DIR/APPEND_SYSTEM.md"
 
 for resource_type in extensions skills prompts themes; do
   source_directory="$ROOT_DIR/$resource_type"

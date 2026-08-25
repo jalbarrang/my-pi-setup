@@ -173,10 +173,6 @@ function Install-ManagedPath {
     }
 }
 
-Install-ManagedPath `
-    -Source (Join-Path $RootDir "config/AGENTS.md") `
-    -Target (Join-Path $PiDir "AGENTS.md")
-
 foreach ($resourceType in @("extensions", "skills", "prompts", "themes")) {
     $sourceDirectory = Join-Path $RootDir $resourceType
     if (-not (Test-Path -LiteralPath $sourceDirectory -PathType Container)) { continue }

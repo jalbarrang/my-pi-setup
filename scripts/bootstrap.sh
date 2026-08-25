@@ -71,8 +71,6 @@ link_path() {
   echo "Linked $relative_path"
 }
 
-link_path "$ROOT_DIR/config/AGENTS.md" "$PI_DIR/AGENTS.md"
-
 for resource_type in extensions skills prompts themes; do
   source_directory="$ROOT_DIR/$resource_type"
   [[ -d "$source_directory" ]] || continue

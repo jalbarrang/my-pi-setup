@@ -5,7 +5,6 @@ Portable personal configuration for [Pi](https://pi.dev), designed to stay consi
 ## Included
 
 - Shared model, UI, compaction, and package preferences
-- Global agent instructions
 - `copy-all` and Claude bridge extensions
 - Bug-hunter prompt and `gh-stack` skill
 - Optional Context7 configuration
@@ -49,4 +48,4 @@ skills/       agent skills
 scripts/      bootstrap and settings merge checks
 ```
 
-Private Pi state—provider auth, trust decisions, sessions, caches, and API keys—stays outside Git.
+Private Pi state—provider auth, trust decisions, sessions, caches, and API keys—stays outside Git. Global agent instructions are managed by the [dotfiles repository](https://github.com/jalbarrang/dotfiles).

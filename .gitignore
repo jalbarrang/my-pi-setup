@@ -29,6 +29,7 @@ git/
 intercom/
 backups/
 models-store.json
+mcp.json
 mcp-cache.json
 mcp-onboarding.json
 settings.json

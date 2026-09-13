@@ -66,6 +66,20 @@ Copy-Item extensions/context7/config.example.json extensions/context7/config.jso
 
 Replace the placeholder with the machine's API key. `config.json` is ignored by Git. If a Context7 config already exists under `~/.pi/agent/extensions/context7/`, the bootstrap script migrates it into this checkout before linking the directory.
 
+## MCP servers
+
+MCP server config is machine-local, like Context7 credentials:
+
+```bash
+~/.pi/agent/mcp.json
+```
+
+Edit it directly (or use `.pi/mcp.json` / `.mcp.json` per project, which the
+`pi-mcp` extension reads only for trusted projects). It is created empty on
+first run and is never part of this repo, so API keys stay off Git. See
+[`extensions/pi-mcp/README.md`](extensions/pi-mcp/README.md) for the format,
+server options, and the `/mcp` command.
+
 ## Authentication and private state
 
 Run `pi`, then `/login` on each machine. Never copy or commit:

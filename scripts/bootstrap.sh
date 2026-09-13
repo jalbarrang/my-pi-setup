@@ -102,7 +102,7 @@ if [[ "$SKIP_DEPS" == false ]]; then
       pnpm --dir "$extension_directory" install --frozen-lockfile
     else
       echo "Installing dependencies for $extension_name with npm"
-      npm --prefix "$extension_directory" install --ignore-scripts
+      npm --prefix "$extension_directory" install --omit=dev --ignore-scripts
     fi
   done < <(find "$ROOT_DIR/extensions" -mindepth 2 -maxdepth 2 -name package.json -print0 | sort -z)
 fi

@@ -209,7 +209,7 @@ if (-not $SkipDeps) {
             & pnpm --dir $extension.FullName install --frozen-lockfile
         } else {
             Write-Output "Installing dependencies for $($extension.Name) with npm"
-            & npm --prefix $extension.FullName install --ignore-scripts
+            & npm --prefix $extension.FullName install --omit=dev --ignore-scripts
         }
 
         if ($LASTEXITCODE -ne 0) {

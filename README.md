@@ -5,9 +5,10 @@ Portable personal configuration for [Pi](https://pi.dev), designed to stay consi
 ## Included
 
 - Shared model, UI, compaction, and package preferences
-- `copy-all` and Claude bridge extensions
+- `copy-all`, `pi-mcp`, and Claude bridge extensions
 - Bug-hunter prompt and `gh-stack` skill
 - Optional Context7 configuration
+- MCP server configuration (machine-local)
 - Per-machine overrides for local package checkouts
 
 ## Quick start

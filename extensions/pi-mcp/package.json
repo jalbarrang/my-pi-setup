@@ -1,0 +1,27 @@
+{
+  "name": "pi-mcp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP (Model Context Protocol) client for pi — inspired by opencode's mcp implementation",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "fixture:stdio": "node test/fixture-server.mjs",
+    "fixture:remote": "node test/fixture-remote-server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.85.1",
+    "@earendil-works/pi-tui": "^0.85.1",
+    "@types/node": "^24.0.0",
+    "typebox": "^1.3.7",
+    "typescript": "^5.9.0"
+  }
+}

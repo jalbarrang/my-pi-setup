@@ -5,8 +5,8 @@ Portable personal configuration for [Pi](https://pi.dev), designed to stay consi
 ## Included
 
 - Shared model, UI, compaction, and package preferences
-- `codex-usage`, `copy-all`, `pi-markdown-context`, `pi-mcp`, and `whimsical-working` extensions
-- Bug-hunter prompt, `gh-stack` and `terminal-mermaid` skills
+- `codex-usage`, `commit`, `confirmation`, `copy-all`, `pi-markdown-context`, `pi-mcp`, and `whimsical-working` extensions
+- `gh-stack` and `terminal-mermaid` skills
 - Optional Context7 configuration
 - MCP server configuration (machine-local)
 - Per-machine overrides for local package checkouts
@@ -59,7 +59,6 @@ See [SETUP.md](SETUP.md) for machine-specific packages, credentials, and update 
 ```text
 config/       shared settings and global instructions
 extensions/   personal Pi extensions
-prompts/      reusable prompt templates
 skills/       agent skills
 scripts/      bootstrap and settings merge checks
 ```

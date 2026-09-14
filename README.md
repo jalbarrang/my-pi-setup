@@ -5,11 +5,26 @@ Portable personal configuration for [Pi](https://pi.dev), designed to stay consi
 ## Included
 
 - Shared model, UI, compaction, and package preferences
-- `copy-all`, `pi-mcp`, and Claude bridge extensions
-- Bug-hunter prompt and `gh-stack` skill
+- `copy-all`, `pi-mcp`, `pi-markdown-context`, and Claude bridge extensions
+- Bug-hunter prompt, `gh-stack` and `terminal-mermaid` skills
 - Optional Context7 configuration
 - MCP server configuration (machine-local)
 - Per-machine overrides for local package checkouts
+
+### Agentic Markdown
+
+`AGENTS.md` and `CLAUDE.md` support `@path` imports, so shared instructions can
+be split across files. Skills support imports plus inline shell substitution for
+live context such as the current diff.
+
+Shell substitution runs only for trusted skills. Context files never execute
+commands, because Pi loads them before the project trust decision. See
+[`extensions/pi-markdown-context/README.md`](extensions/pi-markdown-context/README.md).
+
+### Mermaid diagrams
+
+The `terminal-mermaid` skill teaches agents to emit Mermaid diagrams that fit
+Pi's built-in width-limited Unicode renderer.
 
 ## Quick start
 

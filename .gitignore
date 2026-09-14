@@ -1,7 +1,6 @@
 # Dependencies and generated files
 node_modules/
 **/node_modules/
-extensions/claude-bridge/package-lock.json
 *.log
 *.tmp
 .DS_Store

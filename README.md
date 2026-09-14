@@ -5,7 +5,7 @@ Portable personal configuration for [Pi](https://pi.dev), designed to stay consi
 ## Included
 
 - Shared model, UI, compaction, and package preferences
-- `copy-all`, `pi-mcp`, `pi-markdown-context`, and Claude bridge extensions
+- `codex-usage`, `copy-all`, `pi-markdown-context`, `pi-mcp`, and `whimsical-working` extensions
 - Bug-hunter prompt, `gh-stack` and `terminal-mermaid` skills
 - Optional Context7 configuration
 - MCP server configuration (machine-local)

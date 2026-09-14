@@ -108,5 +108,3 @@ Restart Pi after bootstrapping so package and resource changes load.
 ```bash
 npm run check
 ```
-
-The Claude bridge has a separate live end-to-end test in `extensions/claude-bridge`; it requires Claude Code cross-session tools and is not part of the default check.
